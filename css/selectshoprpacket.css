@@ -1,0 +1,10 @@
+ .modal-scrollable {position: fixed;top: 0;bottom: 0;left: 0;right: 0;overflow: auto;}
+    .modal.fade.in {top: 40%;}
+    #myRpacketModal{width:650px;margin-left:-325px;}
+    #myRpacketModal .modal-body{position: relative;min-height:200px;}
+    #myRpacketModal table{margin:0;}
+    #myRpacketModal table tr td,#myRpacketModal table tr th{text-align: center;vertical-align: middle;}
+    #packetcount{line-height:32px;text-align: right;}
+    #packetcount span{margin: 0 5px;}
+    #packetcount span a{color:#0088cc;}
+    #delrpacketlist .cardname,#delrpacketlist .cardmark{text-overflow: ellipsis;display: -webkit-box;overflow: hidden;-webkit-line-clamp: 1;-webkit-box-orient: vertical;word-break: break-all;}

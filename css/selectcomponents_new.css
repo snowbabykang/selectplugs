@@ -1,0 +1,359 @@
+#myPrdModal{width: 900px;margin-left: -450px;}
+#myPrdModal .modal-body{max-height:none!important;}
+.m-body-l{ width:25%; overflow:auto; height:400px;min-height:200px;border-right: 1px solid #eee;box-sizing: border-box;}
+.m-body-c{ width:50%; height:400px;min-height:200px;border-right: 1px solid #eee;box-sizing: border-box;}
+.m-body-r{ width:25%;  min-height:200px; height:400px;overflow:auto;padding-right: 1px;box-sizing: border-box;}
+#myPrdModal .m-body{padding:0;overflow:auto!important;}
+#myPrdModal #prdlist{height: 368px;overflow: auto;}
+#classifylist ul li,#assortlist ul li,#catepagelist ul li,#audiocatelist ul li{ height:36px; display:block; line-height:36px; padding-left:1em;white-space: nowrap;color:#666; cursor:pointer;overflow: hidden;} 
+#classifylist ul li.item_sub,#assortlist ul li.item_sub,#catepagelist ul li.item_sub,#audiocatelist ul li.item_sub{ padding-left:2em; color:#999;} 
+#classifylist ul li.active,#assortlist ul li.active,#catepagelist ul li.active,#audiocatelist ul li.active{background-color: #08C; color:#fff;}
+/* .modal-scrollable {position: fixed;top: 0;bottom: 0;left: 0;right: 0;overflow: auto;} */
+/* .modal.fade.in {top: 50%!important;} */
+.modal-header h3 {font-size: 16px;}
+.refreshbtn{margin-right: 5px;}
+#myPrdModal #prdlist a:hover{color:#333;}
+/* #myPrdModal #prdlist ul li,#myPrdModal #previewprd ul li{border-bottom: 1px solid #eee;padding: 3px 0px;display: block;height: 40px;padding: 5px;} */
+#myPrdModal #prdlist ul li.btn-success a,#myPrdModal #prdlist ul li.btn-success a:hover{ color:#fff;}
+#myPrdModal .prdinfo .label{margin-left:3px;}
+/* 商品列表 */
+.modalprdlists .prdinfo{display: table;box-sizing:border-box;padding:5px;border-bottom: 1px solid #eee;width:100%;}
+.modalprdlists .prdinfo .pic{padding:25px 0;position: relative;width: 50px;overflow: hidden;display: table-cell;}
+.modalprdlists .prdinfo .pic img{width:100%;position: absolute;top:50%;left: 0;right: 0;transform: translateY(-50%);}
+.modalprdlists .prdinfo .prd-des{padding:0px 5px 0px 10px;display: table-cell;vertical-align: middle;}
+.modalprdlists .prd-des .title{ overflow : hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;margin:0;padding:0;margin-bottom: 8px;}
+.modalprdlists .prd-des .price{color: #f24f50;padding:0;margin:0;font-weight: 400;}
+#myPrdModal #previewprd ul li,#relatepreview li{position:relative;}
+#myPrdModal .cancleprd,#relatepreview .cancleprd{display:none;}
+#myPrdModal #previewprd ul li:hover .cancleprd,#relatepreview li:hover .cancleprd{display:block;position: absolute;top: 0;right: 2px;background: rgba(0,0,0,0.5);
+color: #fff;width: 18px;height: 18px;line-height: 18px;border-radius: 100%;text-align: center;}
+#myPrdModal #previewprd .highlight{ color:#333;}
+#previewprd li{box-sizing:border-box;border-bottom: 1px solid #eee;}
+#previewprd .prdinfo{border:none;}
+#previewprd .move_area{padding-top: 15px;padding-left: 5px;box-sizing: border-box;}
+#previewprd li a{display: block;margin-left: 20px;}
+
+
+/* 插件公用样式 */
+.modal .highlight{color:red;}
+.modal .dataloading{background: url(../img/loading-32x32.gif) no-repeat center top;margin-top: 100px;padding-top: 35px;text-align: center;padding-left: 10px;}
+.modal .datawarn{background: url(../img/iconfont-fail.png) no-repeat center top;margin-top: 100px;padding-top: 70px;text-align: center;}
+.modal .prdpagecount{height: 32px;line-height: 32px;text-align: right;padding-right: 10px;}
+.modal .prdpagecount span{padding-right: 5px;}
+.modal .prdpagecount span a{color:#0088cc;}
+.modal input[type="text"]{margin:0;}
+.modal .j-search{margin-left:10px;}
+
+/* 选择图片 */
+#myAlbumModal{width:910px;margin-left: -470px;}
+#myAlbumModal .m-body-c{width:473px;position: relative;}
+#myAlbumModal .m-body-l{width:217px;}
+#myAlbumModal .m-body-r{width:200px;padding: 0 12px;}
+#myAlbumModal .prdpagecount{position: absolute;width: 100%;bottom: 0;background: #fff;}
+#myAlbumModal .input-append{margin: 5px 0 5px 5px;}
+#myAlbumModal .input-append input{ width: 140px;margin-right: 5px;}
+#myAlbumModal #catepagelist{height: 350px;overflow: auto;box-sizing: border-box;border-top: 1px solid #eee;box-shadow:inset 1px 1px 7px -3px rgba(0,0,0,0.2);}
+#myalbumlist{height:400px;overflow: auto;padding-bottom: 30px;box-sizing: border-box;padding-left: 7px;}
+#myalbumlist ul{height:auto;overflow: hidden;}
+#myalbumlist li{width: 82px;height: 82px;overflow: hidden;float: left;border: 1px solid #ddd;padding: 5px;margin: 5px;text-align: center;line-height: 70px;position: relative;}
+#myalbumlist li.active{border: 1px solid #03b401;background: rgba(6,191,4,0.1);}
+#myalbumlist li.active:after{background: #03b401;width:20px;height: 20px;position: absolute;right:0;top:0;content:"✔";color:#fff;line-height: 20px;}
+#myalbumlist li .imgboxhidden{padding: 50% 0;position: relative;width: 100%;overflow: hidden;}
+#myalbumlist li .imgboxhidden img{width: 100%;position: absolute;top: 50%;left: 0;right: 0;transform: translateY(-50%);-webkit-transform: translateY(-50%);}
+#myalbumlist li .imgtitle{position: absolute;left: 0;bottom: 0;line-height: 23px;width: 100%;height: 23px;
+overflow: hidden;color: #fff;background: rgba(0,0,0,0.5);padding: 0 3px;box-sizing: border-box;  word-break: break-all;
+-webkit-transition: all .3s ease-out;
+-moz-transition: all .3s ease-out;
+-ms-transition: all .3s ease-out;
+-o-transition: all .3s ease-out;
+transition: all .3s ease-out;}
+#myalbumlist li:hover .imgtitle{bottom:-25px;}
+
+/* 选择连接 */
+#normal_link li,#classify_link li,#magazineList li,#agent_link li,#local_link li,.mymainselectlist li{height:32px;line-height:32px;}
+#normal_link li span,#classify_link li span,#magazineList li>span,#agent_link li span,#local_link li span,.mymainselectlist li span{display: inline-block;float: left;padding-left: 15px;}
+#normal_link li a,#classify_link li a,#magazineList li a,#agent_link li a,#local_link li a,.mymainselectlist li a{float: right;height: 32px;line-height: 32px;width: 100px;padding-right: 20px;text-align: right;}
+#pagebar{height: 32px;line-height: 32px;text-align: right;padding-right: 20px;}
+#UrlModal .m-body-c{width:75%;border:0;height:352px;font-size:12px;}
+#UrlModal .modal-body{padding-bottom: 0;max-height: none;overflow: visible;}
+#UrlModal .tab-content{height:392px;}
+#UrlModal #normal_link,#UrlModal #classify_link,#bookclassfiylist{height:392px;overflow:auto;}
+#magazineList{height:320px;overflow:auto;}
+#normal_link li:hover,#classify_link li:hover,#magazineList li:hover,#agent_link li:hover,#local_link li:hover,.mymainselectlist li:hover{background:#eee;}
+#assortlist{height:352px;}
+#prdLinklist .prd-des{margin-right:50px;}
+#UrlModal .nav-pills{margin-bottom:10px;}
+#classify_link li.item_sub,#bookclassfiylist li.item_sub{padding-left: 15px;color: #bebebe;}
+#prdLinklist{height:320px;overflow:auto;}
+.modalprdlists .confirmgetlink{display: table-cell;width: 60px;vertical-align: middle;text-align: right;}
+
+#myFuncardModal{width:700px;margin-left:-350px;}
+#ImgtxtModal{width:630px;margin-left:-300px;display:none;}
+#ImgtxtModal .modal-body{max-height: none;}
+.imgtxtlists table tr th,
+.imgtxtlists table tr td,
+#myformlist tr th,
+#myformlist tr td,
+#mycouponlist tr th,
+#mycouponlist tr td,
+#mystafflist tr th,
+#mystafflist tr td,
+#mystorelist tr th,
+#mystorelist tr td,
+#myRpacketModal tr th,
+#myRpacketModal tr td,
+#myFuncardModal tr th,
+#myFuncardModal tr td,
+#myaudiolist tr th,
+#myaudiolist tr td,
+#MyVipcardModal tr th,
+#MyVipcardModal tr td,
+#mymesstemplist tr th,
+#mymesstemplist tr td
+{padding: 5px 5px;text-align: left;}
+#ImgtxtModal .imgtxtlists .selimgtxtbtn,
+#myformlist .selformbtn,
+#mycouponlist .selcouponbtn,
+#mystafflist .selstaffbtn,
+#mystorelist .selstaffbtn,
+#myRpacketModal .selrpacketbtn,
+#myFuncardModal .selfuncardbtn,
+#MyMessTempModal .seltempbtn,
+#myaudiolist .selaudiobtn{display: block;}
+#ImgtxtModal .imgtxtlists{height:390px;overflow: auto;}
+#MyCouponModal .modal-body{height:415px;overflow: auto;max-height: none;}
+#wxmassModal .imgtxtlists,
+#MyFromModal .modal-body,
+#myRpacketModal .modal-body,
+#MyMessTempModal .modal-body,
+#MyVipcardModal .modal-body,
+#myFuncardModal .modal-body{height:360px;overflow: auto;max-height: none;}
+#ImgtxtModal .imgtxt_title,
+#wxmassModal .imgtxt_title,
+#myformlist .form_title,
+#mycouponlist .coupon_title,
+#mymesstemplist .temp_title,
+#mystorelist .ellip_title,
+#myRpacketModal .rpacket_title,
+#myFuncardModal .rpacket_title{overflow : hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;margin:0;}
+.imgtxtlists table tr:hover,
+#myformlist table tr:hover,
+#MyVipcardModal table tr:hover,
+#mycouponlist table tr:hover,
+#mystafflist table tr:hover,
+#myRpacketModal table tr:hover,
+#myFuncardModal table tr:hover,
+#mystorelist table tr:hover,
+#myaudiolist table tr:hover,
+#mymesstemplist table tr:hover
+{background: #eee;}
+.refreshimgtxt{margin-right:5px;}
+
+/* webuploader */
+.webuploader-container{position:relative;}
+.webuploader-element-invisible{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);}
+.webuploader-pick{position:relative;display:inline-block;cursor:pointer;background:#00b7ee;padding:10px 15px;color:#fff;
+text-align:center;border-radius:3px;overflow:hidden;}
+.webuploader-pick-hover{background:#00a2d4;}
+.webuploader-pick-disable{opacity:.6;pointer-events:none;}
+#uploader{position:relative;overflow:hidden;height:400px;}
+#uploader .queueList{height:300px;overflow:auto;}
+.element-invisible{position:absolute!important;clip:rect(1px,1px,1px,1px);}
+#uploader .placeholder{text-align:center;margin-top:10px;}
+#uploader .placeholder .webuploader-pick{font-size:18px;background:#00b7ee;border-radius:3px;line-height:44px;color:#fff;
+display:inline-block;cursor:pointer;box-shadow:0 1px 1px rgba(0,0,0,.1);}
+#uploader .placeholder .webuploader-pick-hover{background:#00a2d4;}
+#uploader .placeholder .flashTip{color:#666;font-size:12px;position:absolute;width:100%;text-align:center;bottom:20px;}
+#uploader .placeholder .flashTip a{color:#0785d1;text-decoration:none;}
+#uploader .placeholder .flashTip a:hover{text-decoration:underline;}
+#uploader .placeholder.webuploader-dnd-over{border-color:#999;}
+#uploader .placeholder.webuploader-dnd-over.webuploader-dnd-denied{border-color:red;}
+#uploader .filelist{list-style:none;margin:0;padding:0;}
+#uploader .filelist:after{content:'';display:block;width:0;height:0;overflow:hidden;clear:both;}
+#uploader .filelist li{width:80px;height:80px;text-align:center;margin:10px 5px 0 0;position:relative;overflow:hidden;font-size:12px;float:left;}
+#uploader .filelist li p.log{position:relative;top:-45px;}
+#uploader .filelist li p.title{margin:0;position:absolute;left:0;bottom:0;height:20px;line-height:20px;text-indent:5px;
+background:rgba(0,0,0,.6);color:#fff;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:12px;z-index:10;width:100%;}
+#uploader .filelist li p.progress{position:absolute;width:100%;bottom:0;left:0;height:8px;overflow:hidden;z-index:50;background:0 0;}
+#uploader .filelist li p.progress span{display:none;overflow:hidden;width:0;height:100%;background:#1483d8 url(../img/progress.png) repeat-x;
+-webit-transition:width 200ms linear;-moz-transition:width 200ms linear;-o-transition:width 200ms linear;-ms-transition:width 200ms linear;
+transition:width 200ms linear;-webkit-animation:progressmove 2s linear infinite;-moz-animation:progressmove 2s linear infinite;
+-o-animation:progressmove 2s linear infinite;-ms-animation:progressmove 2s linear infinite;animation:progressmove 2s linear infinite;
+-webkit-transform:translateZ(0);}
+@-webkit-keyframes progressmove{
+	0%{background-position:0 0;}
+	100%{background-position:17px 0;}
+}
+@-moz-keyframes progressmove{
+	0%{background-position:0 0;}
+	100%{background-position:17px 0;}
+}
+@keyframes progressmove{
+	0%{background-position:0 0;}
+	100%{background-position:17px 0;}
+}
+#uploader .filelist li p.imgWrap{position:relative;z-index:2;line-height:80px;vertical-align:middle;overflow:hidden;width:80px;height:80px;
+-webkit-transform-origin:50% 50%;-moz-transform-origin:50% 50%;-o-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;
+-webit-transition:200ms ease-out;-moz-transition:200ms ease-out;-o-transition:200ms ease-out;-ms-transition:200ms ease-out;transition:200ms ease-out;}
+#uploader .filelist li img{width:100%;}
+#uploader .filelist li p.error{background:#f43838;color:#fff;position:absolute;bottom:0;left:0;height:28px;line-height:28px;width:100%;z-index:100;}
+#uploader .filelist li .success{display:block;position:absolute;left:0;bottom:0;height:40px;width:100%;z-index:200;
+background:url(../img/success.png) no-repeat right bottom;background-size:30px 30px;}
+#uploader .filelist div.file-panel{position:absolute;height:0;background:rgba(0,0,0,.5);width:100%;top:0;left:0;overflow:hidden;z-index:300;
+filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#80000000', endColorstr='#80000000') \0;}
+#uploader .filelist div.file-panel span{width:24px;height:24px;display:inline;float:right;text-indent:-9999px;overflow:hidden;
+background:url(../img/icons.png) no-repeat;margin:5px 1px 1px;cursor:pointer;}
+#uploader .filelist div.file-panel span.rotateLeft{background-position:0 -24px;}
+#uploader .filelist div.file-panel span.rotateLeft:hover{background-position:0 0;}
+#uploader .filelist div.file-panel span.rotateRight{background-position:-24px -24px;}
+#uploader .filelist div.file-panel span.rotateRight:hover{background-position:-24px 0;}
+#uploader .filelist div.file-panel span.cancel{background-position:-48px -24px;}
+#uploader .filelist div.file-panel span.cancel:hover{background-position:-48px 0;}
+#uploader .statusBar{height:auto;overflow:hidden;position:absolute;bottom:0;height:90px;width: 170px;}
+#uploader .statusBar .progress{border:1px solid #1483d8;width:150px;background:#fff;height:18px;position:relative;display:inline-block;
+text-align:center;line-height:20px;color:#6dbfff;position:relative;margin-right:10px;margin-bottom:0;}
+#uploader .statusBar .progress span.percentage{width:0;height:100%;left:0;top:0;background:#1483d8;position:absolute;}
+#uploader .statusBar .progress span.text{position:relative;z-index:10;}
+#uploader .statusBar .info{display:inline-block;font-size:12px;color:#666;}
+#uploader .statusBar .btns{line-height:40px;height:auto;overflow:hidden;position: absolute;bottom: 10px;}
+#filePicker2{display:inline-block;float:left;}
+#uploader .statusBar .btns .uploadBtn,#uploader .statusBar .btns .uploadBtn.state-paused,
+#uploader .statusBar .btns .uploadBtn.state-uploading,#uploader .statusBar .btns .webuploader-pick
+{background:#fff;border:1px solid #cfcfcf;color:#565656;padding:0 10px;display:inline-block;border-radius:3px;cursor:pointer;font-size:14px;float:left;}
+#uploader .statusBar .btns .uploadBtn.state-paused:hover,#uploader .statusBar .btns .uploadBtn.state-uploading:hover,
+#uploader .statusBar .btns .uploadBtn:hover,#uploader .statusBar .btns .webuploader-pick-hover{background:#f0f0f0;}
+#uploader .statusBar .btns .uploadBtn{background:#00b7ee;color:#fff;border-color:transparent;margin-left:10px;}
+#uploader .statusBar .btns .uploadBtn:hover{background:#00a2d4;}
+#uploader .statusBar .btns .uploadBtn.disabled{pointer-events:none;opacity:.6;}
+#filePicker div:nth-child(2){width:138px!important;height:64px!important;}
+#musicPicker div:nth-child(2){width:78px!important;height:38px!important;}
+
+/* 选择地区 */
+#myAreaModal{width:1000px;margin-left:-500px;}
+#myAreaModal .modal-body{padding:0;overflow: visible;height: 300px;}
+#myAreaModal .pdata{float: left;width:740px;box-sizing:border-box;border-right: 1px solid #ddd;padding:10px 0 10px 15px;height: 300px;overflow: visible;}
+#myAreaModal .ecitys{float: left;position: relative;}
+#myAreaModal .s_province {padding: 5px 0 5px 3px;display: block;float: left;width: 180px;}
+#myAreaModal .s_province input[type="checkbox"],.pcitys .areacity input[type="checkbox"]{margin:0;}
+#myAreaModal .s_province label,.pcitys .areacity label{display: inline;}
+#myAreaModal .s_province.pupp{background: #eee;}
+#myAreaModal .select_city{width: 20px;display: inline-block;text-align: center;}
+#myAreaModal .select_city:hover{background: #eee;}
+#myAreaModal .pcitys{display: none;position: absolute;left: 0px;top: 30px;background: #FFFEC6;z-index: 999;border: solid 1px #F7E4A5;box-shadow: 0px 5px 5px #ccc;width: 300px;}
+#myAreaModal .pcitys .areacity {margin-right: 3px;padding: 4px 0px 1px 4px;display: inline-block;}
+#myAreaModal .btn_closecity{text-align: center;padding: 10px;}
+#myAreaModal .check_num{color:red;}
+#myAreaModal .previewarea{float: left;width:257px;box-sizing:border-box;padding:10px;position: relative;}
+#myAreaModal .previewarea div{position: absolute;top: 0;left: 0;right: 0;padding: 10px;border-bottom: 1px solid #ddd;box-shadow: 1px 0 12px -6px rgba(0,0,0,0.5);}
+#myAreaModal .previewarea ul{margin-top:25px;padding-top: 5px;height: 260px;overflow: auto;padding-bottom: 10px;box-sizing: border-box;}
+#myAreaModal .previewarea li{float: left;padding:2px 5px;border:1px solid #eee;border-radius:2px;margin: 5px 5px 0 0;position: relative;}
+#myAreaModal .previewarea .canclearea{font-size: 16px;position: absolute;top: -8px;right: -7px;cursor:pointer;display:none;width: 15px;height: 15px;background: #aaa;border-radius: 100%;color: #fff;text-align: center;line-height: 15px;z-index: 10;}
+#myAreaModal .previewarea li:hover .canclearea{display: block;}
+
+/* 选择音频 */
+#myAudioModal{width:700px;margin-left: -350px;}
+#myAudioModal .m-body-l{width:30%;}
+#myAudioModal .m-body-r{width:70%;padding: 10px;}
+#myAudioModal .searchaudio{width:100px;}
+#myAudioModal .audioplay {background: url("../img/play1.png");float: left;margin-right: 4px;display: inline-block;width: 20px;height: 20px;cursor: pointer;}
+#myAudioModal .audioplay.play {background: url("../img/pause1.png");}
+#myAudioModal .input-append{margin: 5px 0 5px 5px;}
+#myAudioModal .input-append input{ width: 140px;margin-right: 5px;}
+
+#webuploadmusic{ position: relative;}
+#webuploadmusic .webuploader-pick{float: left;padding:5px 15px;}
+#webuploadmusic .uploadbox{height: 28px;padding: 5px;background: #eee;width: 340px;margin-left: 10px;  position: absolute;left: 90px;top:-4px;}
+#webuploadmusic .uploadtitle{margin: 0;}
+#webuploadmusic .uploadprogress{position: absolute;width: 340px;bottom: 5px;left: 5px;height: 8px;background: none;margin: 0;}
+#webuploadmusic .uploadprogress span{border-radius: 4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;display: none;overflow: hidden;width: 0;height: 100%;
+    background: #1483d8 url(../img/progress.png) repeat-x;
+	-webit-transition: width 200ms linear;
+    -moz-transition: width 200ms linear;
+    -o-transition: width 200ms linear;
+    -ms-transition: width 200ms linear;
+    transition: width 200ms linear;
+    -webkit-animation: progressmove 2s linear infinite;
+    -moz-animation: progressmove 2s linear infinite;
+    -o-animation: progressmove 2s linear infinite;
+    -ms-animation: progressmove 2s linear infinite;
+    animation: progressmove 2s linear infinite;
+    -webkit-transform: translateZ(0);
+}
+@-webkit-keyframes progressmove {
+    0% {
+       background-position: 0 0;
+    }
+    100% {
+       background-position: 17px 0;
+    }
+}
+@-moz-keyframes progressmove {
+    0% {
+       background-position: 0 0;
+    }
+    100% {
+       background-position: 17px 0;
+    }
+}
+@keyframes progressmove {
+    0% {
+       background-position: 0 0;
+    }
+    100% {
+       background-position: 17px 0;
+    }
+}
+
+/* 选择员工插件 */
+#mystafflist .staffimg{ width: 40px;padding-right: 10px;max-height: 40px;}
+#mystafflist td{border-bottom: 1px solid #eee;}
+#MystaffModal .modal-body{height:315px;}
+#MystoreModal .modal-body{height:360px;}
+/* 选择关联分类的样式 */
+#relaclassfiyModal{width: 700px;margin-left: -350px;}
+#relaclassfiyModal .modal-body{height: auto;overflow: hidden;padding:0;}
+#relateClassfiy{width:60%;height: 410px;overflow: auto;border-right: 1px solid #eee;}
+#relatepreview{width:40%;height: 410px;overflow: auto;}
+#relateClassfiy li,#relatepreview li{height: 40px;line-height: 40px;border-bottom: 1px solid #eee;padding-left:10px;}
+#relateClassfiy li.item_sub,#relatepreview li.item_sub{padding-left: 30px;color: #bebebe;}
+#relateClassfiy li.item_sub.btn-success,#relatepreview li.item_sub.btn-success{color:#fff;}
+#relateClassfiy li a{float: right;line-height: 40px;width: 100px;text-align: center;}
+#relateClassfiy .selrelalink.active{background: #0088cc;color: #fff;}
+/* #relatepreview li{clear:both;height: 40px;line-height: 40px;border-bottom: 1px solid #eee;} */
+#relatepreview li a{height: 40px;line-height: 40px;display: inline-block;width:100%;}
+#relatepreview li .layer_icon_move{margin-top:15px;}
+#relateClassfiy .btn-success a.selrelalink{color:#fff;}
+
+
+/* 新版样式修改 */
+/* 选择连接 */
+#UrlModal{width:600px;}
+#UrlModal .modal-header,#myAlbumModal .modal-header{ padding: 0;padding-top: 10px;}
+#UrlModal .btn,#myPrdModal .btn,#myAlbumModal .salbumbtn,#ImgtxtModal .btn,#wxmassModal .btn,#MyFromModal .btn,#myAudioModal .btn{padding:0;}
+#magazine_link .btn.btn-primary,#ImgtxtModal .btn.btn-success,#wxmassModal .btn.btn-success,#MyFromModal .btn.btn-success{padding:0 22px;}
+#magazine_link .prd_k,#myPrdModal .mod-searchprd .prd_k,#ImgtxtModal .prd_k,#wxmassModal .prd_k,#MyFromModal .prd_k{width:200px;}
+#local_link{padding-top: 30px;}
+#local_link .btn{margin-left: 10px;}
+/* 选择商品 */
+#myPrdModal #sale_status{margin-right: 5px;}
+#myPrdModal .move_area {cursor: move;float: left;height: 30px;width: 17px;display: block;}
+#myPrdModal .layer_icon_move {width: 10px;height: 10px;display: block;margin-top: 10px;background: url(../../seller/layer_option_icon.png) -40px -25px;}
+/* 选择图片 */
+#myAlbumModal .modal-header h3{padding:10px 10px 0;}
+#myAlbumModal .m-body,#myAudioModal .m-body{padding:0;}
+/* 选择图文 */
+#wxmassModal .modal-header h3,#MyMessTempModal h3,#MyFromModal h3{float: none;}
+#ImgtxtModal .modal-body,#wxmassModal .modal-body,#myFuncardModal .modal-body,#myRpacketModal .modal-body{padding:0;}
+#ImgtxtModal .tab-content,#wxmassModal .tab-content,#myFuncardModal .tab-content,#myRpacketModal .tab-content{padding:0;}
+#ImgtxtModal table tr td:first-child,#ImgtxtModal table tr th:first-child,
+#wxmassModal table tr td:first-child,#wxmassModal table tr th:first-child,
+#myFuncardModal table tr td:first-child,#myFuncardModal table tr th:first-child,
+#myRpacketModal table tr td:first-child,#myRpacketModal table tr th:first-child{padding-left:15px;}
+
+
+
+
+
+
+
+

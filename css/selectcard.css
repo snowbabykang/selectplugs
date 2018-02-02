@@ -1,0 +1,20 @@
+#selectedprdlist {max-height: 400px;overflow: auto;}
+#selectedPrdModal .prdinfo .pic{ width:40px; height:40px; overflow:hidden; float:left;}
+#selectedPrdModal .prdinfo .prd-des{ margin-left:50px;}
+#selectedPrdModal #selectedprdlist ul li{border-bottom: 1px solid #eee;padding: 3px 0px;display: block;height: 40px;padding: 5px;}
+#selectedPrdModal .prd-des .title{ overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;margin:0;padding:0;}
+#selectedPrdModal .prd-des .price{color: #f24f50;padding:0;margin:0;}
+.modal-scrollable {position: fixed;top: 0;bottom: 0;left: 0;right: 0;overflow: auto;}
+.modal.fade.in {top: 40%;} 
+#myDelcardModal{width:650px;margin-left:-325px;}
+#myDelcardModal .modal-body{position: relative;min-height:200px;}
+#myDelcardModal table{margin:0;}
+#myDelcardModal table tr td,#myDelcardModal table tr th{text-align: center;vertical-align: middle;}
+#cardpagecount{position: absolute;bottom: 0;right:10px;line-height:32px;}
+#cardpagecount span{margin: 0 5px;}
+#cardpagecount span a{color:#0088cc;}
+#delcardlist .cardname,#delcardlist .cardmark{text-overflow: ellipsis;display: -webkit-box;overflow: hidden;-webkit-line-clamp: 1;-webkit-box-orient: vertical;word-break: break-all;}

@@ -1,0 +1,158 @@
+body {
+  font-size: 12px;
+  color: #333;
+  font-family: '微软雅黑';
+  background: #f0f2f4;
+}
+body, input, textarea, select {
+  color: #333;
+  font: 14px/22px "Hiragino Sans GB", "Helvetica Neue", "微软雅黑","Lato","Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webikit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix {
+  float: none;
+  clear: both;
+  zoom: 1;
+}
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #303030;
+  outline: 0;
+  text-decoration: none;
+}
+a:visited {
+  color: #666666;
+  text-decoration: none;
+}
+.wxeditor .tabbox {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;width:125px;
+  background-color: #282d36;
+}
+.tabs {
+  height: 100%;
+}
+.tabs li:hover a, .tabs li a.current {
+  background-color: #fc4e4e;
+  color: #fff;
+}
+.tabs li a {
+  display: block;
+  padding: 20px 8px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+.wxeditor .tplcontent {
+   position: relative;
+  margin-left: 125px;
+  background-color: #424a58;
+}
+#colorpickerbox {
+  position: fixed;
+  height: 180px;
+  background: #424a58;
+  overflow: auto;
+  width: 375px;
+}
+.allcontent{
+  width: 375px;
+  position: fixed;
+  top: 180px;
+  bottom: 0;
+  overflow: auto;
+	background: #424a58;
+}
+.tab_con {
+	padding: 10px 0 0 0;
+  border: 1px solid #ccc;
+  border-left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.tab_con .content {
+  height: 100%;
+  overflow-y: auto;
+}
+.tab_con .content li{
+	  padding: 10px;
+  background: #fff;
+  margin: 0px 10px 8px;
+}
+.dn {
+  display: none;
+}
+
+/* 右侧富文本 */
+#bdeditor {
+  float: left;
+  width: 380px;
+  margin-left: 550px;
+}
+
+#previewbox {
+	display:none;
+  float: right;
+    margin-right: 30px;
+	width:325px;
+  height: 652px;
+  background: url('../../img/colorpicker/iphone.png');
+  background-size: contain;
+  padding: 80px 25px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+.previewcon{
+	height: 100%;
+  overflow: auto;
+}
+.scrollbar::-webkit-scrollbar{width:3px;background:#949494;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;
+-o-transition:all 0.3s ease-out;transition:all 0.3s ease-out}
+.scrollbar::-webkit-scrollbar-button{display:none}
+.scrollbar::-webkit-scrollbar-track{background:#E6E6E6;}
+.scrollbar::-webkit-scrollbar-thumb{background:#808080;border-radius:100px;-webkit-border-radius:100px}
+.scrollbar::-webkit-scrollbar-thumb:active{background:#ccc}
+
+.fr{float: right;}
+.instructionbox{padding:15px 20px 20px;border-top:1px solid #eee;margin:10px 10px 0 0;background: #fff;width: 350px;}
+.instructionbox .set_tips{font-size:14px;font-weight: bold;margin-bottom:10px;}
+.instructionbox p{color:#999;}
+
+#loading{color:#fff;  text-align: center; padding-top: 20px;}
+
+.hide{display: none;}
+
+.copyhtml,.clearcon{  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #5cb85c;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;}
+
+.clearcon{ border: 1px solid #ddd;background: #fff;color:#333;}
+.red{color:red;}
+

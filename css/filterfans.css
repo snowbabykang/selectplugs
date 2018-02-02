@@ -1,0 +1,11 @@
+.filter_area .btn.active{-webkit-box-shadow:none;border-color: green;background: green;color: #fff;}
+.modal.fade.in{top:50%;}
+#filter_fans{width:700px;margin-left: -350px;}
+#filter_fans .filter_area table tr td{padding:5px;}
+.morefilter{
+	  text-align: right;
+  border-bottom: 1px solid #eee;
+  padding: 0 20px 10px 0;
+	  margin-bottom: 10px;
+  margin-top: -20px;
+}

@@ -1,0 +1,9 @@
+#mycouponModal.fade.in {top: 50%;} 
+#mycouponModal{width:650px;margin-left:-325px;}
+#mycouponModal .modal-body{position: relative;min-height:400px;}
+#mycouponModal table{margin:0;}
+#mycouponModal table tr td,#mycouponModal table tr th{text-align: center;vertical-align: middle;}
+#mycouponpage{  line-height: 32px;text-align: right;}
+#mycouponpage span{margin: 0 5px;}
+#mycouponpage span a{color:#0088cc;}
+#mycouponlist .couponname{text-overflow: ellipsis;display: -webkit-box;overflow: hidden;-webkit-line-clamp: 1;-webkit-box-orient: vertical;word-break: break-all;}
